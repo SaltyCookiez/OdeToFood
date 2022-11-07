@@ -86,7 +86,7 @@ namespace OdeToFood.Controllers
                 return View();
             }
         }
-        static List<RestaurantReview> _reviews = new List<RestaurantReview>
+        public static List<RestaurantReview> _reviews = new List<RestaurantReview>
         {
             new RestaurantReview {Id=1,Name="Cinnamon Club",City="London",Country="UK",Rating=10,},
             new RestaurantReview {Id=2,Name="Marrakesh",City="D.C",Country="USA",Rating=10,},
