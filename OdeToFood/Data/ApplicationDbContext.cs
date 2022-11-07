@@ -10,9 +10,10 @@ namespace OdeToFood.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-                        : base(options)
+            : base(options)
         {
         }
-        public DbSet<OdeToFood.Models.RestaurantReview> RestaurantReview { get; set; }
+        public DbSet<RestaurantReview> RestaurantReviews { get; set; }
+        public DbSet<Restaurant> Restaurants { get; set; }
     }
 }
