@@ -85,11 +85,11 @@ body {
 }
 
 .review h4 {
-  color: maroon;
+  color: #1c1c1c;
   padding: 5px;
-  background: darkorange;
+  background: #8c25e6;
   border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 
 .review p {
