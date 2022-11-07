@@ -17,14 +17,14 @@ namespace OdeToFood.Controllers
         {
             var message = HtmlEncoder.Default.Encode(name);
 
-            //return Content(message);
+            return Content(message);
             //return new EmptyResult();
             //return File("/css/site.css", "text/css");
             //return Json(HtmlEncoder.Default);
             //return Redirect("https://www.tthk.ee");
             //return RedirectToRoute("default",new { controller = "cuisine", action = "Second", count = 5 });
             //return RedirectToAction(nameof(Second), new { count = 5 });
-            return RedirectToRoute("default", new {controller = "Home", action = "About"});
+            //return RedirectToRoute("default", new {controller = "Home", action = "About"});
         }
 
         public IActionResult Second(int count)
