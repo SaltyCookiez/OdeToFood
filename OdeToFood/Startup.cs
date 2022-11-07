@@ -49,6 +49,15 @@ namespace OdeToFood
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "cuisine",
+                    pattern: "cuisine/{name?}",
+                    defaults: new
+                    {
+                        controller = "Cuisine",
+                        action = "Search"
+                    });
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
