@@ -19,8 +19,8 @@ namespace OdeToFood.Data
                     return;
                 }
                 context.Restaurants.AddRange(
-                    new Models.Restaurant { Name = "Sabatino's", City = "Baltimore", Country = "USA" },
-                    new Models.Restaurant { Name = "Great Lake", City = "Chicago", Country = "USA" },
+                    new Restaurant { Name = "Sabatino's", City = "Baltimore", Country = "USA" },
+                    new Restaurant { Name = "Great Lake", City = "Chicago", Country = "USA" },
                     new Restaurant { Name = "Smaka", City = "Gothenburg", Country = "Sweden", Reviews = new List<RestaurantReview> { new RestaurantReview { Rating = 9, Body = "Great food!" } } });
                 context.SaveChanges();
             }
