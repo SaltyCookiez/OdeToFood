@@ -17,9 +17,5 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17" />
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
 	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Views\Reviews\" />
-	</ItemGroup>
 	
 </Project>
