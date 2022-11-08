@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace OdeToFood.Data.Migrations
+namespace OdeToFood.Migrations
 {
-    public partial class Create_RestaurantAndReviews : Migration
+    public partial class FixingIssue : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

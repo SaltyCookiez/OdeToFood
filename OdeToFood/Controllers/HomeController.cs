@@ -12,7 +12,7 @@ namespace OdeToFood.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private ApplicationDbContext _db;
 
         public HomeController(ApplicationDbContext dbContext)
         {
