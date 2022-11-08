@@ -23,6 +23,17 @@ namespace OdeToFood.Data
                     new Restaurant { Name = "Great Lake", City = "Chicago", Country = "USA" },
                     new Restaurant { Name = "Smaka", City = "Gothenburg", Country = "Sweden", Reviews = new List<RestaurantReview> { new RestaurantReview { Rating = 9, Body = "Great food!" } } });
                 context.SaveChanges();
+
+                for (int i = 0; i < 1000; i++)
+                {
+                    context.Restaurants.AddRange(
+                    new Restaurant
+                    {
+                        Name = $"{i}. eatery",
+                        City = "Nowhere",
+                        Country = "USA"
+                    });
+                }
             }
         }
     }

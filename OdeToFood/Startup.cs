@@ -1,3 +1,4 @@
+using AspNetCore.Unobtrusive.Ajax;
 using Humanizer.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +30,7 @@ namespace OdeToFood
             services.AddControllersWithViews();
 
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
+            services.AddUnobtrusiveAjax();
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connectionString));
         }
@@ -48,6 +50,8 @@ namespace OdeToFood
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseUnobtrusiveAjax();
 
             app.UseRouting();
 
